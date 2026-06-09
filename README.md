@@ -8,9 +8,9 @@ A full-stack Loan Application Portal for Vitto's operations team. Built with Nod
 
 | Service | URL |
 |---------|-----|
-| Frontend | `[https://vitto-frontend.vercel.app](https://vitto-lite-app.vercel.app/)` |
-| Backend API | `[https://vitto-backend.vercel.app](https://vitto-lite-api.vercel.app/)` |
-| Health Check | `[https://vitto-backend.vercel.app/health](https://vitto-lite-api.vercel.app/health)` |
+| Frontend | [https://vitto-frontend.vercel.app](https://vitto-lite-app.vercel.app/) |
+| Backend API | [https://vitto-backend.vercel.app](https://vitto-lite-api.vercel.app/) |
+| Health Check | [https://vitto-backend.vercel.app/health](https://vitto-lite-api.vercel.app/health) |
 
 ---
 
@@ -90,7 +90,7 @@ psql "$DATABASE_URL" -f backend/migrations/001_init.sql
 
 ```bash
 cd backend
-# Edit .env — set DATABASE_URL and optionally SMTP vars
+# Edit .env — set DATABASE_URL and optionally SMTP vars (Environment variables given below)
 npm install
 npm run dev        # Runs on http://localhost:3001
 ```
