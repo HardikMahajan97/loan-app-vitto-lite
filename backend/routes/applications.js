@@ -5,6 +5,7 @@ import {
   validateListApplications,
   validateUpdateStatus,
 } from '../middleware/validators.js';
+import { sendApplicationConfirmationEmail } from '../utils/mailer.js';
 
 const router = Router();
 
@@ -21,6 +22,9 @@ router.post('/', validateCreateApplication, async (req, res, next) => {
     );
 
     const application = result.rows[0];
+
+    // Fire-and-forget email — async, never awaited
+    sendApplicationConfirmationEmail(application);
 
     return res.status(201).json({
       success: true,
