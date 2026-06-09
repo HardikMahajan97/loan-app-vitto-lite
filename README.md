@@ -8,9 +8,8 @@ A full-stack Loan Application Portal for Vitto's operations team. Built with Nod
 
 | Service | URL |
 |---------|-----|
-| Frontend | [https://vitto-frontend.vercel.app](https://vitto-lite-app.vercel.app/) |
-| Backend API | [https://vitto-backend.vercel.app](https://vitto-lite-api.vercel.app/) |
-| Health Check | [https://vitto-backend.vercel.app/health](https://vitto-lite-api.vercel.app/health) |
+| Frontend | [https://vitto-lite-app.vercel.app/](https://vitto-lite-app.vercel.app/) |
+| Backend API | [https://vitto-lite-api.vercel.app/health](https://vitto-lite-api.vercel.app/health) |
 
 ---
 
@@ -74,7 +73,7 @@ vitto/
 ### 1. Clone the repo
 
 ```bash
-git clone [https://github.com/your-username/vitto.git](https://github.com/HardikMahajan97/loan-app-vitto-lite.git)
+git clone https://github.com/HardikMahajan97/loan-app-vitto-lite.git
 cd loan-app-vitto-lite
 ```
 
@@ -202,7 +201,7 @@ Confirmation emails are sent **asynchronously** after a successful application s
 
 ---
 
-## Known Issues / What I'd Improve
+## Known Issues
 
 - Add JWT-based auth to protect the PATCH endpoint from public access
 - Add application history/audit log for status change tracking
