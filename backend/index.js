@@ -72,10 +72,10 @@ app.use(notFoundHandler);
 app.use(errorHandler);
 
 // ── Start ─────────────────────────────────────────────────────
-app.listen(PORT, () => {
-  console.log(`\n Vitto API running on port ${PORT}`);
-  console.log(` Environment : ${process.env.NODE_ENV || 'development'}`);
-  console.log(` Health : http://localhost:${PORT}/health\n`);
-});
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`\n Vitto API running on port ${PORT}`);
+  });
+}
 
 export default app;
